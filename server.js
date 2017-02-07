@@ -14,6 +14,16 @@ app.get('/article-one', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/article-two', function (req, res) {
+    res.send('Article two wil be server here!');
+  //res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/article-three', function (req, res) {
+    res.send('Article three wil be server here!');
+  //res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
