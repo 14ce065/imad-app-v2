@@ -24,7 +24,7 @@ app.get('/article-three', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/lavi.jpg', function (req, res) {
+app.get('/lavi.jpg', function (req, res) {
    // res.send('Article one wil be server here!');
   res.sendFile(path.join(__dirname, 'ui', 'lavi.jpg'));
 });
