@@ -17,7 +17,7 @@ button.onclick=function(){
             }
         }
     }
-    //set span element!
-    counter=counter+1;
+   request.open('GET','http://http://user-14ce065.imad.hasura-app.io/',true);
+   request.send(null);
     
 }
