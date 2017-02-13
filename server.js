@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
+/*app.get('/article-one', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
@@ -19,6 +19,12 @@ app.get('/article-two', function (req, res) {
 
 app.get('/article-three', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+});*/
+
+var counter=0;
+app.get('/counter', function (req, res) {
+    counter=counter+1;
+  res.sendFile(counter.toString());
 });
 
 app.get('/lavi.jpg', function (req, res) {
