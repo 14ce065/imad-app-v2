@@ -9,6 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/submit/nameip',function(req,res)
+{
+    var names=[];
+    var name=req.paras.nameip;
+    names.push(nameip);
+    res.send(JSON.stringify(names));
+    
+});
+
 /*app.get('/article-one', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -40,14 +49,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/submit/nameip',function(req,res)
-{
-    var names=[];
-    var name=req.paras.nameip;
-    names.push(nameip);
-    res.send(JSON.stringify(names));
-    
-});
+
 /*app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });*/
