@@ -39,7 +39,14 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
+var names[];
+app.get('/submit/nameip',function(req,res)
+{
+    var name=req.paras(nameip);
+    names.push(nameip);
+    res.send(JSON.stringify(names));
+    
+});
 /*app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });*/
