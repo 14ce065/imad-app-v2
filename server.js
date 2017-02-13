@@ -11,7 +11,6 @@ app.get('/', function (req, res) {
 var names=[];
 app.get('/submit',function(req,res)
 {
-    
     var name=req.query.nameip;
     names.push(nameip);
     res.send(JSON.stringify(names));
