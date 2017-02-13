@@ -24,7 +24,7 @@ button.onclick=function(){
 };
 
 var nameInput=document.getElementById('name');
-var name=nameInput.value;
+var nameip=nameInput.value;
 var submit=document.getElementById('submit');
 submit.onclick=function()
 {
