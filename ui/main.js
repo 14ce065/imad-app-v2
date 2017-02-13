@@ -23,8 +23,7 @@ button.onclick=function(){
 
 };
 
-var nameInput=document.getElementById('name');
-var nameip=nameInput.value;
+
 var submit=document.getElementById('submit');
 submit.onclick=function()
 {
@@ -51,6 +50,8 @@ submit.onclick=function()
             }
         }
     };
+    var nameInput=document.getElementById('name');
+var nameip=nameInput.value;
     request.open('GET','http://user-14ce065.imad.hasura-app.io/submit?nameip='+nameip,true);
    request.send(null);
     
