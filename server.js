@@ -42,7 +42,7 @@ app.get('/ui/main.js', function (req, res) {
 var names[];
 app.get('/submit/nameip',function(req,res)
 {
-    var name=req.paras(nameip);
+    var name=req.paras.nameip;
     names.push(nameip);
     res.send(JSON.stringify(names));
     
